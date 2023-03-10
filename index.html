@@ -317,7 +317,7 @@
       </div>
 
       <div class="subscribe-footer-container">
-        <h3 class="footer-subscribe-title">Subscribe</h3>
+        <p>class="footer-subscribe-title">Subscribe</p>
         <form class="footer-form">
           <label class="footer-form-label" for="e-mail">
             <input class="footer-form-input" type="email" name="email" required placeholder="E-mail">
@@ -340,34 +340,35 @@
         </svg></button>
       <!--Modal content-->
       <div class="modal-content">
-        <h4 class="modal-title">Leave your contacts and we will call you back</h4>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="form-field" for="name">Name
-            <div class="input-container">
+          <div class="input-container">
+            <label class="form-field" for="name">Name
               <input class="modal-form-input" type="text" id="name" name="name" required pattern="[a-zA-Zа-яА-Я]+"
                 minlength="2">
               <svg class="modal-form-input-icon" width="12" height="12">
                 <use href="./images/subscribeicons.svg#name"></use>
               </svg>
-            </div>
-          </label>
-          <label class="form-field" for="phone">Phone
-            <div class="input-container">
+            </label>
+          </div>
+          <div class="input-container">
+            <label class="form-field" for="phone">Phone
               <input class="modal-form-input" type="text" id="phone" name="phone" required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
               <svg class="modal-form-input-icon" width="13" height="13">
                 <use href="./images/subscribeicons.svg#phone"></use>
               </svg>
-            </div>
-          </label>
-          <label class="form-field" for="email">Email
-            <div class="input-container">
+
+            </label>
+          </div>
+          <div class="input-container">
+            <label class="form-field" for="email">Email
               <input class="modal-form-input" type="email" id="email" name="email">
               <svg class="modal-form-input-icon" width="15" height="12">
                 <use href="./images/subscribeicons.svg#message"></use>
               </svg>
-            </div>
-          </label>
+            </label>
+          </div>
           <div class="input-container">
             <label class="form-field textarea-field" for="comment">Comment
               <textarea class="modal-message" id="comment" name="comment" placeholder="Text input"></textarea></label>
