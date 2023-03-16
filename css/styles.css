@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
 * {
   box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
 body {
   background-color: white;
   margin: 0;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 ul {
   margin: 0;
@@ -76,7 +76,7 @@ nav {
   justify-content: space-around;
 }
 .design-logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   margin-right: 76px;
   text-transform: uppercase;
   text-decoration: none;
@@ -103,7 +103,7 @@ nav {
 }
 .main-nav-buttons {
   display: flex;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
@@ -139,7 +139,7 @@ nav {
   border-radius: 2px;
   bottom: 0;
 
-  content: "";
+  content: '';
 }
 .links:hover,
 .links:focus {
@@ -190,7 +190,7 @@ nav {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopleoffice@2x.jpg);
+      url(../images/peopleoffice-1440@2x.jpg);
   }
 }
 
@@ -207,7 +207,7 @@ h1 {
 .order-button {
   width: 159px;
   height: 56px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   margin: auto;
   font-weight: 500;
   font-size: 16px;
@@ -469,7 +469,7 @@ footer .social-link-item:focus {
   align-items: center;
   gap: 16px;
   padding: 8px 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -508,7 +508,7 @@ footer .social-link-item:focus {
   border: 1px solid var(--accent);
   border-radius: 4px;
   /*text button*/
-  font-family: "Roboto";
+  font-family: 'Roboto';
 
   font-weight: 500;
   font-size: 16px;
@@ -723,7 +723,7 @@ footer .social-link-item:focus {
   transition: border-color var(--transition-dur-and-func);
 }
 .modal-message::placeholder {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
@@ -774,7 +774,7 @@ footer .social-link-item:focus {
   align-self: center;
   min-width: 169px;
   padding: 13px 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -894,7 +894,7 @@ footer .social-link-item:focus {
   .mobile-menu {
     padding-top: 80px;
     list-style: none;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -984,6 +984,7 @@ footer .social-link-item:focus {
       ),
       url(../images/peopleoffice-480@2x.jpg);
     padding: 124px 0;
+    background-size: 480px, auto;
   }
   /*section2*/
   #section2 {
@@ -1140,6 +1141,7 @@ footer .social-link-item:focus {
       ),
       url(../images/peopleoffice-768@2x.jpg);
     padding: 112px 0;
+    /* background-size: 480px, auto; */
   }
   /*section2*/
   #section2 {
@@ -1228,8 +1230,19 @@ footer .social-link-item:focus {
   .work-examples {
     gap: 72px 24px;
     justify-content: flex-start;
+    width: 736px;
+    margin: auto;
   }
   .work-item {
-    flex-basis: calc((100% - 24px) / 2);
+    flex-basis: 356px;
+  }
+  .work-item img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-menu-btn,
+  .menu-container {
+    display: none;
   }
 }
