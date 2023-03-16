@@ -13,16 +13,15 @@
 
 <body>
   <!--Top line-->
-  <!--Top line-->
   <header>
     <div class="container" id="header-container">
       <!-- Main navigation -->
       <nav>
         <a class="design-logo" href="./index.html">Web<span class="desing-logo-part">Studio</span></a>
         <ul class="main-nav-buttons">
-          <li><a class="links " href="./index.html">Studio</a></li>
+          <li><a class="links current" href="./index.html">Studio</a></li>
           <li class="portfolio">
-            <a class="links current" href="./portfolio.html">Portfolio</a>
+            <a class="links" href="./portfolio.html">Portfolio</a>
           </li>
           <li><a class="links" href="./contacts.html">Contacts</a></li>
         </ul>
@@ -37,6 +36,11 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="header-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="header-menu-icon" width="32" height="22">
+          <use href="./images/burger.svg#icon-icons8-menu"></use>
+        </svg>
+      </button>
       <!-- Contacts -->
 
     </div>
@@ -249,7 +253,7 @@
       </div>
 
       <div class="subscribe-footer-container">
-        <h3 class="footer-subscribe-title">Subscribe</h3>
+        <p class="footer-subscribe-title">Subscribe</p>
         <form class="footer-form">
           <label class="footer-form-label" for="e-mail">
             <input class="footer-form-input" type="email" name="email" required placeholder="E-mail">
@@ -262,6 +266,62 @@
       </form>
     </div>
   </footer>
+  <!-- mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button type="button" class="modal-close mobile-close menu-toggle js-close-menu" data-modal-close>
+      <svg class="mobile-icon-close" width="8" height="8">
+        <use href="./images/socialicons.svg#close-black-18dp-2-1">
+        </use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="mobile-item"><a class="links" href="./index.html">Studio</a></li>
+      <li class="mobile-item"><a class="links" href="./portfolio.html">Portfolio</a></li>
+      <li class="mobile-item"><a class="links" href="./contacts.html">Contacts</a></li>
+    </ul>
+    </nav>
+    <div class="mobile-media">
+      <address>
+        <ul class="main-contact">
+          <li class="mobile-contact mobile-tel">
+            <a class="links" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-contact mobile-mail">
+            <a class=" mobile-mail links" href=" mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-icons-list">
+        <li><a class="social-link-item" href="#">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram-2">
+              </use>
+            </svg>
+          </a></li>
+        <li><a class="social-link-item" href="#"><svg width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter-1">
+              </use>
+            </svg></a></li>
+        <li><a class="social-link-item" href="#"><svg width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook-1">
+              </use>
+            </svg></a></li>
+        <li><a class="social-link-item" href="#"><svg width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin-1">
+              </use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- scripts -->
+  <script src="./js/modal.js"></script>
+  <script src="/js/mobile-menu.js"></script>
 </body>
 
 
